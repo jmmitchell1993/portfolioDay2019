@@ -1,0 +1,145 @@
+.programs_container{
+
+	.program{
+		
+		//animation bubble animation
+		.program_animation{
+  			position: relative;
+		   -webkit-animation-name: moving_bubble_animation;
+		   -webkit-animation-duration: 15s;			  
+		   animation-name: moving_bubble_animation;
+		   animation-duration: 15s;
+		   animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes moving_bubble_animation {
+		  0%   {top:0px;}
+		  25%  {top:25px;}
+		  50%  {top:15px;}
+		  66%  {top:27px;}
+		  75%  {top:50px;}
+		  100% {top:0px;}
+		}
+
+		@keyframes moving_bubble_animation {
+		  0%   {top:0px;}
+		  25%  {top:25px;}
+		  50%  {top:15px;}
+		  66%  {top:27px;}
+		  75%  {top:50px;}
+		  100% {top:0px;}
+		}
+
+		//video editing bubble animation
+		.program_video-editing{
+			position: relative;
+		   -webkit-animation-name: moving_bubble_video-editing;
+		   -webkit-animation-duration: 15s;			  
+		   animation-name: moving_bubble_video-editing;
+		   animation-duration: 15s;
+		   animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes moving_bubble_video-editing {
+		  0%   {top:0px;}
+		  25%  {top:27px;}
+		  50%  {top:23px;}
+		  66%  {top:17px;}
+		  75%  {top:38px;}
+		  100% {top:0px;}
+		}
+
+		@keyframes moving_bubble_video-editing {
+		  0%   {top:0px;}
+		  25%  {top:27px;}
+		  50%  {top:23px;}
+		  66%  {top:17px;}
+		  75%  {top:38px;}
+		  100% {top:0px;}
+		}
+
+		//photography bubble animation
+		.program_photography{
+			position: relative;
+		   -webkit-animation-name: moving_bubble_photography;
+		   -webkit-animation-duration: 15s;			  
+		   animation-name: moving_bubble_photography;
+		   animation-duration:15s;
+		   animation-iteration-count: infinite;	
+		}
+
+		@-webkit-keyframes moving_bubble_photography {
+		  0%   {top:0px;}
+		  25%  {top:39px;}
+		  50%  {top:26px;}
+		  66%  {top:33px;}
+		  75%  {top:15px;}
+		  100% {top:0px;}
+		}
+
+		@keyframes moving_bubble_photography {
+		  0%   {top:0px;}
+		  25%  {top:39px;}
+		  50%  {top:26px;}
+		  66%  {top:33px;}
+		  75%  {top:15px;}
+		  100% {top:0px;}
+		}
+
+		//graphic design bubble animation
+		.program_graphic-design{
+			position: relative;
+		   -webkit-animation-name: moving_bubble_graphic-design;
+		   -webkit-animation-duration: 15s;			  
+		   animation-name: moving_bubble_graphic-design;
+		   animation-duration: 15s;
+		   animation-iteration-count: infinite;  		
+		}
+
+		@-webkit-keyframes moving_bubble_graphic-design {
+		  0%   {top:0px;}
+		  25%  {top:10px;}
+		  50%  {top:45px;}
+		  66%  {top:24px;}
+		  75%  {top:35px;}
+		  100% {top:0px;}
+		}
+
+		@keyframes moving_bubble_graphic-design {
+		  0%   {top:0px;}
+		  25%  {top:10px;}
+		  50%  {top:45px;}
+		  66%  {top:24px;}
+		  75%  {top:35px;}
+		  100% {top:0px;}
+		}
+
+		//web dev bubble animation
+		.program_web-development{
+			position: relative;
+		   -webkit-animation-name: moving_bubble_web-dev;
+		   -webkit-animation-duration: 15s;			  
+		   animation-name: moving_bubble_web-dev;
+		   animation-duration: 15s;
+		   animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes moving_bubble_web-dev {
+		  0%   {top:0px;}
+		  25%  {top:15px;}
+		  50%  {top:25px;}
+		  66%  {top:10px;}
+		  75%  {top:40px;}
+		  100% {top:0px;}
+		}
+
+		@keyframes moving_bubble_web-dev {
+		  0%   {top:0px;}
+		  25%  {top:15px;}
+		  50%  {top:25px;}
+		  66%  {top:10px;}
+		  75%  {top:40px;}
+		  100% {top:0px;}
+		}
+	}
+}
