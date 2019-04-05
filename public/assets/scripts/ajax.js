@@ -14,7 +14,6 @@ function callModal(id) {
 }
 
 function getStudents(query) {
-    console.log('hi');
     $("#students").html("");
     $.ajax({
         url: "public/apis/student.php?program=" + query,

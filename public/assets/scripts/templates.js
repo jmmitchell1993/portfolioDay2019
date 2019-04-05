@@ -19,7 +19,7 @@ function buildModal(res) {
                         <div class="modal-content">
                             <div class="row">
                                 <div class="col-6 modal-header">
-                                    <img src="public/assets/images/${image}"  class="students_image space_image" width="140px" height="140px"/>
+                                    <img src="public/assets/images/${image}" width="140px" height="140px"/>
                                 </div>
                                 <div class="col-6 modal-body">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">

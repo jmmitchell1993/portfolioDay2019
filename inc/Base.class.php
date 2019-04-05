@@ -18,8 +18,8 @@ class Base {
 
     function __construct() {
         // create a connection to our database
-        $this->db = new PDO('mysql:host=localhost;dbname=portfolioday_backend;charset=utf8', 
-            'root', '');       
+        $this->db = new PDO('mysql:host=localhost;dbname=gullydsm_dmacc;charset=utf8', 
+            'gullydsm_dmacc', 'wdv341');       
     }
 
     function specificColumns(array $columns) {
