@@ -30,10 +30,11 @@ body {
 .bubble {
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
+
 #students, .programs {
   display: flex;
   flex-direction: row;
@@ -98,6 +99,10 @@ header {
   position: absolute;
 }
 
+img+img{
+  margin-left: 1.5em;
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 1em;
@@ -105,6 +110,11 @@ header {
 
   .student-form a {
     font-size: 1.5em;
+  }
+
+  img+img{
+    margin-top: 1.2em;
+    margin-left: 0;
   }
 
   .info {
