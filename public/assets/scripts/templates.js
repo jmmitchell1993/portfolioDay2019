@@ -22,34 +22,43 @@ function buildModal(res) {
                                     <img src="public/assets/images/${image}" width="140px" height="140px"/>
                                 </div>
                                 <div class="col-6 modal-body">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
                                     <h5 class="modal-title">${res[object].student_first_name} ${res[object].student_last_name}</h5>
                                     <p>${res[object].student_program}</p>
                                     <p>${secondaryProgram}</p>
-                                    <p><strong>Web Links</strong></p>
-                                    <div style="display:flex; flex-direction: column;">`
+                                    <p class="description-title">Web Links:</p>
+                                    <div style="display:flex; flex-direction: column; padding-bottom: 12px;">`
 
                                     if(website) {
-                                        html += `<button onclick="javascript:openWindow('${res[object].student_website_address}')">My website</button>`
+                                        html += `<button class="web-links" onclick="javascript:openWindow('${res[object].student_website_address}')">My website</button>`
                                     }
                                     if(linkedIn) {
-                                        html += `<button onclick="javascript:openWindow('${res[object].student_linkedin_profile}')">My linkedin</button>`
+                                        html += `<button class="web-links" onclick="javascript:openWindow('${res[object].student_linkedin_profile}')">My linkedin</button>`
                                     }
                                     if(secondaryWebsite) {
-                                        html += `<button onclick="javascript:openWindow('${res[object].student_secondary_website_address}')">My github</button>`
+                                        html += `<button class="web-links" onclick="javascript:openWindow('${res[object].student_secondary_website_address}')">My github</button>`
                                     }
 
             html += `
                                     </div>
-                                    <p><strong>Hometown</strong></p>
-                                    <p>${hometown}</p>
-                                    <p><strong>Career Goals</strong></p>
-                                    <p>${goals}</p>
-                                    <p><strong>Hobbies</strong></p>
-                                    <p>${hobbies}</p>
+
+                                    <div class="info-container">
+                                        <p class="description-title">Hometown:</p>
+                                        <p>${hometown}</p>
+                                    </div>
+
+                                    <div class="info-container">
+                                        <p class="description-title">Career Goals:</p>
+                                        <p>${goals}</p>
+                                    </div>
+                                    
+                                    <div class="info-container">
+                                        <p class="description-title">Hobbies:</p>
+                                        <p>${hobbies}</p>
+                                    </div>
                                 </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
                             </div>
                         </div>
                     </div>
